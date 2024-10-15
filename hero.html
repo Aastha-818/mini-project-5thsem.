@@ -26,7 +26,7 @@
             <div class="nav-content">
                 <ul class="nav-links">
                     <li><a href="hero.html" class="active">Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#">Test</a></li>
                     <li><a href="classification.html">Result</a></li>
                 </ul>
@@ -43,7 +43,7 @@
                 <p class="welcome-text">WELCOME TO EXPERT</p>
                 <h1 class="hero-title">Automatic Dental Disease Detection System</h1>
                 <div class="hero-buttons">
-                    <a href="#" class="contact-btn">CONTACT US</a>
+                    <a href="#contact" class="contact-btn">CONTACT US</a>
                     <a href="#" class="explore-btn">
                         <i class="fas fa-play-circle"></i>
                         Explore Your Dentist
@@ -54,14 +54,14 @@
                         <i class="fas fa-upload"></i>
                         <span>Upload from Device</span>
                     </div>
-                    <div class="upload-option">
+                    <!-- <div class="upload-option">
                         <i class="fas fa-link"></i>
                         <span>Add from URL</span>
                     </div>
                     <div class="upload-option">
                         <i class="fas fa-search"></i>
                         <span>Search from Web</span>
-                    </div>
+                    </div> -->
                     <div class="upload-preview">
                         <i class="fas fa-file-medical"></i>
                     </div>
@@ -81,7 +81,7 @@
             </div>
         </section>
          <!-- Our Model Features Section -->
-         <section class="features-section">
+         <section id =about class="features-section">
             <h2 class="section-title">Our Model Features</h2>
             <div class="features-grid">
                 <div class="feature-card">
@@ -143,6 +143,14 @@
                         <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
                         <li><i class="fas fa-envelope"></i> info@expertdentalcare.com</li>
                     </ul>
+                    <ul>
+                        <li class="social-links">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </li>
+                    </ul>
                 </div>
                 <form class="contact-form">
                     <input type="text" placeholder="Your Name" required>
@@ -151,8 +159,43 @@
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
+         
         </section>
-        
+        <!-- Footer Section -->
+<footer class="footer">
+    <!-- Bubbles animation background -->
+    <div class="bubbles">
+        <div class="bubble" style="--size: 3rem; --time: 4s; --delay: 0.5s; --distance: 12rem; --position: 20%;"></div>
+        <div class="bubble" style="--size: 4rem; --time: 6s; --delay: 0.2s; --distance: 15rem; --position: 40%;"></div>
+        <div class="bubble" style="--size: 2rem; --time: 5s; --delay: 1s; --distance: 8rem; --position: 60%;"></div>
+        <div class="bubble" style="--size: 5rem; --time: 7s; --delay: 0.8s; --distance: 20rem; --position: 80%;"></div>
+    </div>
+
+    <!-- Footer Content -->
+    <div class="content">
+        <div>
+            <b>Expert Dental Care</b>
+            <p>&copy; 2024 Expert Dental Care. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+        <div>
+            <div>Follow us on:</div>
+            <div>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<svg style="display:none;">
+    <filter id="blob">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="blob" />
+        <feBlend in="SourceGraphic" in2="blob" />
+    </filter>
+</svg>
     </div>
 </body>
 </html>
