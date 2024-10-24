@@ -114,7 +114,8 @@ class DentalDiseasePredictor:
 
 def main():
     """Main function to demonstrate prediction"""
-    image_path = 'old\hypodontia.jpeg'  # Replace with your image path
+    image_path = 'mouth.jpeg'  # Replace with your image path
+
 
     if not os.path.exists(image_path):
         print(f"Error: Image not found at {image_path}")
