@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expert Dental Care - Disease Detection System</title>
+    <title>Expert Dental Care - Disease Detection Results</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/common.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/classification.css') }}" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -234,7 +236,7 @@
             </div>
         </nav>
 
-        <!-- Binary Classification Result -->
+        <!-- Binary Classification Result
         <section class="result-section">
             <h2 class="result-title">Binary Classification Result</h2>
             <div class="result-card">
@@ -250,7 +252,7 @@
                 <a href="#" class="action-btn">Get Detailed Report</a>
                 <a href="#" class="action-btn secondary-btn">Consult a Dentist</a>
             </div>
-        </section>
+        </section> -->
 
         <!-- Multi-class Classification Result -->
         <section class="result-section">
@@ -285,9 +287,22 @@
         </section>
     </div>
 
-    <script>
+    <!-- <script>
         // You can add JavaScript here to make the results dynamic
         // For example, updating the confidence levels based on actual results
     </script>
+    <section class="result-section">
+        <h2 class="result-title">Multi-class Classification Result</h2>
+        <p>Our system has analyzed the image and identified the following dental conditions:</p>
+        <div class="disease-list">
+            Disease cards will be populated by JavaScript -->
+        <!-- </div>
+        <div class="action-buttons">
+            <a href="#" class="action-btn">Download Full Report</a>
+            <a href="#" class="action-btn secondary-btn">Schedule Appointment</a>
+        </div> -->
+    </section>
+</div>
+<script src="{{ url_for('static', filename='js/results.js') }}"></script>
 </body>
 </html>
